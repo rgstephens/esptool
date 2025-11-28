@@ -37,6 +37,8 @@ template {"NAME":"AtomS3 Disp","GPIO":[1,0,0,0,0,768,1056,576,0,736,0,704,0,0,10
 ## Matter
 
 ```sh
+SetOption151 1
+Restart 1
 matter
 status 1
 ```
