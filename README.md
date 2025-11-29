@@ -38,6 +38,9 @@ Sensors on GPIO1 & GPIO2
 - GPIO1 - I2C SCL 1
 - GPIO2 - I2C SDA 1
 
+Firmware - http://ota.tasmota.com/tasmota32/release/tasmota32-display.bin
+Custom firmware - https://github.com/rgstephens/esptool/blob/main/tasmota32s3-sensors-disp.bin
+
 ```sh
 # latest working w/o display
 {"NAME":"AtomS3 Disp","GPIO":[1,609,641,0,0,1,1,1,0,1,0,1,1056,0,0,768,416,736,1,1,0,704,800,8736,0,0,1,640,608,1,32,0,1,1,1,1,0,0],"FLAG":0,"BASE":1}
@@ -53,10 +56,17 @@ Template {"NAME":"AtomS3-Lite","GPIO":[0,5090,5088,0,5616,0,0,0,0,0,0,0,0,0,0,0,
 
 ```sh
 dimmer 100
+DisplayMode 0
+DisplayModel 17      // Select GC9A01 driver (compatible with GC9107)
+DisplayWidth 128     // Set width
+DisplayHeight 128    // Set height
+DisplayPower 1       // Turn display on
 DisplayText [z]Hello World
 ```
 
 ### AtomS3 w/Display
+
+- GC9A01 driver is needed
 
 ### M5Stick C
 
